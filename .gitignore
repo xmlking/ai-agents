@@ -1,0 +1,42 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheels/
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.*cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.env.*
+.env.local
+.env.*.local
+!.env.example
+!.env.production.example
+!.env.test.example
+!.env.project

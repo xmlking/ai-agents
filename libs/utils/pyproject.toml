@@ -1,0 +1,33 @@
+[project]
+name = "utils"
+version = "0.1.0"
+description = "Utility functions"
+readme = "README.md"
+authors = [
+    { name = "Sumanth Chinthagunta", email = "xmlking@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.uv]
+package = true
+dev-dependencies = []
+
+[tool.pyright]
+venvPath = "../.."
+venv = ".venv"
+strict = ["**/*.py"]
+pythonVersion = "3.13"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sumo"]
+
+[tool.pytest.ini_options]
+# asyncio_mode = "auto"

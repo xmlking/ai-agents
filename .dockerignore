@@ -1,0 +1,7 @@
+.venv
+.git
+.github
+**/.pytest_cache
+**/__pycache__
+.ruff_cache
+ruff.toml

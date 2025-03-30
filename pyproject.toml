@@ -1,0 +1,66 @@
+[tool.uv.workspace]
+members = ["libs/*", "apps/*"]
+
+[dependency-groups]
+dev = [
+  "poethepoet>=0.33.1",
+  "pyright>=1.1.398",
+  "pytest>=8.3.5",
+  "ruff>=0.11.2",
+]
+
+[tool.uv.sources]
+utils = { workspace = true }
+
+[tool.ruff]
+line-length = 120
+fix = true
+
+target-version = "py310"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "Q", "I", "ASYNC", "T20"]
+ignore = ["F401", "E501"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+"unittest".msg = "Use `pytest` instead."
+
+[tool.pyright]
+exclude = [
+  ".venv",
+  ".github",
+  "docs",
+  "tests",
+  ".devcontainer",
+  "**/__pycache__",
+  ".pytest_cache",
+  ".ruff_cache",
+]
+include = ["src", "tests", "samples"]
+typeCheckingMode = "strict"
+pythonVersion = "3.13"
+venvPath = "."
+venv = ".venv"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-v", "--strict-markers"]
+pythonpath = ["."]
+
+[tool.poe.tasks]
+# run with eg `uv run poe fmt`
+fmt = "ruff format ${PWD}"
+lint = "ruff check --fix ${PWD}"
+check = "pyright ${PWD}"
+test = "pytest ${PWD}"
+# run all the above
+all = [{ ref = "fmt" }, { ref = "lint" }, { ref = "check" }, { ref = "test" }]
+
+echo = "echo ${PWD}"
+
+"ci:fmt" = "ruff format --check ${PWD}" # fail if not formatted
+"ci:lint" = "ruff check ${PWD}"

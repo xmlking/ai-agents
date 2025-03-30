@@ -1,0 +1,97 @@
+{
+    "explorer.sortOrder": "type",
+    "explorer.autoRevealExclude": {
+        "**/node_modules": true,
+        ".venv": true,
+        ".ruff_cache": true,
+        ".pytest_cache": true,
+        "coverage": true
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        ".env": ".env*,.secrets*",
+        ".gitignore": ".gitattributes,.dockerignore",
+        "README.md": "DEVELOPERS.md,CHANGELOG.md,CODE_OF_CONDUCT.md,CONTRIBUTING.md,LICENSE",
+        "Dockerfile": "*.Dockerfile,Dockerfile.*,compose*.yml,.dockerignore",
+        "flake.nix": "flake.lock"
+    },
+    ////////// File settings //////////
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 1000,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    ////////// scm //////////
+    "scm.defaultViewMode": "tree",
+    ////////// Git //////////
+    "git.autofetch": true,
+    ////////// python //////////
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "/bin/zsh"
+        }
+    },
+    "[dockercompose]": {
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.tabSize": 4
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+        "editor.formatOnSave": true
+    },
+    "[github-actions-workflow]": {
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.insertSpaces": true,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.tabSize": 2
+    },
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml",
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[yaml]": {
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    }
+}
