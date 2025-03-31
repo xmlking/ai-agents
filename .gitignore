@@ -22,6 +22,7 @@ wheels/
 build/
 dist/
 wheels/
+tmp
 
 # Unit test / coverage reports
 .coverage
