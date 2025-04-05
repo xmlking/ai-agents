@@ -68,7 +68,7 @@ The following needs to be included with every package `pyproject.toml`:
 venvPath = "../.."       # point to the workspace root where the venv is
 venv = ".venv"
 strict = ["**/*.py"]
-pythonVersion = "3.13"
+pythonVersion = "3.12"
 ```
 
 Then you can run `uv run poe check` as for tests.

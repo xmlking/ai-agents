@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Sumanth Chinthagunta", email = "xmlking@gmail.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "typer>=0.15.2",
     "utils",
@@ -23,7 +23,7 @@ ai_agents_cli = "sumo.cli:app"
 venvPath = "../.."
 venv = ".venv"
 strict = ["**/*.py"]
-pythonVersion = "3.13"
+pythonVersion = "3.12"
 
 [build-system]
 requires = ["hatchling"]

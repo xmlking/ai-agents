@@ -3,12 +3,17 @@ name = "agno-adventures"
 version = "0.1.0"
 description = "agno adventures"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "agno>=1.2.6",
+    "cohere>=5.14.2",
     "duckduckgo-search>=7.5.5",
     "fastapi[standard]>=0.115.12",
+    "lancedb>=0.21.2",
     "openai>=1.69.0",
+    "pgvector>=0.4.0",
+    "pylance>=0.25.2",
     "sqlalchemy>=2.0.40",
+    "tantivy>=0.22.2",
     "yfinance>=0.2.55",
 ]

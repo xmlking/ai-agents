@@ -42,7 +42,7 @@ exclude = [
 ]
 include = ["src", "tests", "samples"]
 typeCheckingMode = "strict"
-pythonVersion = "3.13"
+pythonVersion = "3.12"
 venvPath = "."
 venv = ".venv"
 
