@@ -1,5 +1,7 @@
 # agno-adventures
 
+This module consist example AI Agents build with [Agno](https://docs.agno.com/introduction)
+
 ## Setup
 
 ```shell
@@ -8,7 +10,7 @@ cd apps
 uv init --app  --description "agno adventures" agno-adventures
 cd agno-adventures
 
-## add needed deps
+## (optional) add needed deps. `uv sync` automatically install them for you
 
 # Deps for playground.py
 uv add openai duckduckgo-search yfinance sqlalchemy 'fastapi[standard]' agno

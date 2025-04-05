@@ -8,7 +8,7 @@ There are three packages split into libs and apps:
 
 * **libs**: importable packages, never run independently, do not have entry points
 * **apps**: have entry points, never imported
-* **webui**: UI app as frontend for AI ChatBot
+* **agent-ui**: UI app as frontend for AI ChatBot
 
 > Note that neither of these definitions are enforced by anything in Python or uv.
 
