@@ -27,13 +27,28 @@ uv run --package agno-adventures ruff format
 
 ### Run
 
-```shell
-export OPENAI_API_KEY=sk-proj-XXXXX
-uv run --package agno-adventures playground.py
-uv run --package agno-adventures apps/agno-adventures/playground.py
-```
+1. Run the Chat UI
 
-```shell
-export OPENAI_API_KEY=sk-proj-XXXXX
-uv run --package agno-adventures agentic_rag_with_reranking.py
-```
+    ```shell
+    cd agent-ui
+    pnpm i # first time only
+    # start UI app
+    pnpm dev
+    ```
+
+2. Run **playground** example agent
+
+    ```shell
+    cd apps/agno-adventures
+    export OPENAI_API_KEY=sk-proj-XXXXX
+    uv run --package agno-adventures playground.py
+    ```
+
+3. Run **agentic_rag_with_reranking** example agent
+
+    ```shell
+    cd apps/agno-adventures
+    export OPENAI_API_KEY=sk-proj-XXXXX
+    export CO_API_KEY=XXXXX
+    uv run --package agno-adventures agentic_rag_with_reranking.py
+    ```

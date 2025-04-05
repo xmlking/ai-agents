@@ -34,5 +34,5 @@ agent = Agent(
 
 if __name__ == "__main__":
     # Load the knowledge base, comment after first run
-    agent.knowledge.load(recreate=True)
+    # agent.knowledge.load(recreate=True)
     agent.print_response("What are Agno's key features?")
