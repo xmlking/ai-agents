@@ -54,6 +54,7 @@ dependencies = [
     { name = "openai" },
     { name = "pgvector" },
     { name = "pylance" },
+    { name = "pypdf" },
     { name = "sqlalchemy" },
     { name = "tantivy" },
     { name = "yfinance" },
@@ -69,6 +70,7 @@ requires-dist = [
     { name = "openai", specifier = ">=1.69.0" },
     { name = "pgvector", specifier = ">=0.4.0" },
     { name = "pylance", specifier = ">=0.25.2" },
+    { name = "pypdf", specifier = ">=5.4.0" },
     { name = "sqlalchemy", specifier = ">=2.0.40" },
     { name = "tantivy", specifier = ">=0.22.2" },
     { name = "yfinance", specifier = ">=0.2.55" },
@@ -1023,6 +1025,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/3c/5a/37f51211952aa7be5ec87011b3eeb49aa9c23a2195e752c4b8adf584639b/pylance-0.25.2-cp39-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:e2f67d1ba951e5d4288e398542fea3fcd78a8a75fe309c3ddaf294f515a430ae", size = 34557922 },
     { url = "https://files.pythonhosted.org/packages/b1/26/ddcdcecc0ddc7cccb5b5a31a527f9ed06182b69a8b0bb6fc0eec6a8d1015/pylance-0.25.2-cp39-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:218034ecb2f2388f40c906350374e6da8bb21f6901744f5de2c7b03a5bac486f", size = 37300335 },
     { url = "https://files.pythonhosted.org/packages/5c/92/452dc2ab712308e7da856428be711c4089b58cda75576973da4f0d337359/pylance-0.25.2-cp39-abi3-win_amd64.whl", hash = "sha256:11d4d9d43171429ccad3862dae9dd104c52ccdbb24155217b5a2ce3f62ea0bb3", size = 36704491 },
+]
+
+[[package]]
+name = "pypdf"
+version = "5.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f9/43/4026f6ee056306d0e0eb04fcb9f2122a0f1a5c57ad9dc5e0d67399e47194/pypdf-5.4.0.tar.gz", hash = "sha256:9af476a9dc30fcb137659b0dec747ea94aa954933c52cf02ee33e39a16fe9175", size = 5012492 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/27/d83f8f2a03ca5408dc2cc84b49c0bf3fbf059398a6a2ea7c10acfe28859f/pypdf-5.4.0-py3-none-any.whl", hash = "sha256:db994ab47cadc81057ea1591b90e5b543e2b7ef2d0e31ef41a9bfe763c119dab", size = 302306 },
 ]
 
 [[package]]

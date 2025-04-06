@@ -13,6 +13,7 @@ dependencies = [
     "openai>=1.69.0",
     "pgvector>=0.4.0",
     "pylance>=0.25.2",
+    "pypdf>=5.4.0",
     "sqlalchemy>=2.0.40",
     "tantivy>=0.22.2",
     "yfinance>=0.2.55",
