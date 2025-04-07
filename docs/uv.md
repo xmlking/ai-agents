@@ -311,6 +311,7 @@ uv init --lib utils  --description 'Utility functions'
 ```
 
 ```shell
+# run from root
 uv run --package server ruff format
 ```
 

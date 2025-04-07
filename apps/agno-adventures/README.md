@@ -26,6 +26,7 @@ uv add pypdf
 
 ```shell
 cd apps/agno-adventures
+# or run from root
 uv run --package agno-adventures ruff format
 ```
 
