@@ -310,9 +310,17 @@ cd ../libs
 uv init --lib utils  --description 'Utility functions'
 ```
 
+run from root when using `--package` option
+
 ```shell
-# run from root
+# run format with ruff
 uv run --package server ruff format
+# or format via poe
+uv run --package server poe fmt
+# add dependency to individual package
+uv add --package cli typer
+# run individual package script
+uv run --package cli ai_agents_cli
 ```
 
 > Dependencies between workspace members are editable.

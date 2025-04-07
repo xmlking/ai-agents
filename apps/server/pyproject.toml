@@ -13,7 +13,7 @@ dependencies = ["utils"]
 utils = { workspace = true }
 
 [project.scripts]
-ai_agents_cli = "sumo.server:main"
+ai_agents_server = "sumo.server:main"
 
 [tool.pyright]
 venvPath = "../.."
@@ -34,3 +34,4 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/sumo"]
+
