@@ -18,6 +18,8 @@ uv add openai duckduckgo-search yfinance sqlalchemy 'fastapi[standard]' agno
 uv add agno cohere lancedb tantivy sqlalchemy pylance
 # Deps for agent_with_knowledge.py
 uv add pypdf
+# Azure AI
+uv add azure-ai-inference
 ```
 
 ## Development
