@@ -10,7 +10,7 @@ cd apps
 uv init --app  --description "agno adventures" agno-adventures
 cd agno-adventures
 
-## (optional) add needed deps. `uv sync` automatically install them for you
+## (optional) add needed deps. `uv sync` automatically install them for you.
 
 # Deps for playground.py
 uv add openai duckduckgo-search yfinance sqlalchemy 'fastapi[standard]' agno
