@@ -14,7 +14,7 @@ agent_storage: str = "tmp/agents.db"
 
 web_agent = Agent(
     name="Web Agent",
-    model=AzureOpenAI(id="xyz-gpt-4o"),
+    model=AzureOpenAI(id="xyz-gpt-4.1"),
     tools=[DuckDuckGoTools(verify_ssl=False)],
     instructions=["Always include sources"],
     # Store the agent sessions in a sqlite database
@@ -31,7 +31,7 @@ web_agent = Agent(
 
 finance_agent = Agent(
     name="Finance Agent",
-    model=AzureOpenAI(id="xyz-gpt-4o"),
+    model=AzureOpenAI(id="xyz-gpt-4.1"),
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True, company_news=True)],
     instructions=["Always use tables to display data"],
     storage=SqliteAgentStorage(table_name="finance_agent", db_file=agent_storage),

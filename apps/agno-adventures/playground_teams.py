@@ -15,14 +15,14 @@ class StockAnalysis(BaseModel):
 
 stock_searcher = Agent(
     name="Stock Searcher",
-    model=OpenAIChat("gpt-4o"),
+    model=OpenAIChat("gpt-4.1"),
     role="Searches the web for information on a stock.",
     tools=[YFinanceTools()],
 )
 
 web_searcher = Agent(
     name="Web Searcher",
-    model=OpenAIChat(id="gpt-4o"),
+    model=OpenAIChat(id="gpt-4.1"),
     tools=[DuckDuckGoTools()],
     role="Searches the web for information on a company.",
 )
@@ -31,7 +31,7 @@ web_searcher = Agent(
 agent_team = Team(
     name="Stock Team",
     mode="coordinate",
-    model=OpenAIChat("gpt-4o"),
+    model=OpenAIChat("gpt-4.1"),
     members=[stock_searcher, web_searcher],
     instructions=[
         "First, search the stock market for information about a particular company's stock.",

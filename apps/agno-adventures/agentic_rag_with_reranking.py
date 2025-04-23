@@ -25,7 +25,7 @@ knowledge_base = UrlKnowledge(
 )
 
 agent = Agent(
-    model=OpenAIChat(id="gpt-4o"),
+    model=OpenAIChat(id="gpt-4.1"),
     # Agentic RAG is enabled by default when `knowledge` is provided to the Agent.
     knowledge=knowledge_base,
     show_tool_calls=True,
